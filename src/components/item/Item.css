@@ -1,0 +1,49 @@
+.Item {
+  margin-bottom: 20px;
+}
+
+.tableItem {
+  background-color: #414040;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 7.69px;
+  transition: all ease 0.5s;
+  margin: 0;
+}
+
+.tableItem:hover {
+  background-color: #53acff;
+}
+
+.tableItem li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tableItem li p {
+  margin: 0;
+}
+
+.itemCollapse {
+  padding: 24px;
+  background-color: #181818;
+  border-bottom-left-radius: 7.69px;
+  border-bottom-right-radius: 7.69px;
+  display: none;
+}
+
+.itemCollapse p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.itemCollapse p span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.itemCollapse p a {
+  color: #53acff;
+}

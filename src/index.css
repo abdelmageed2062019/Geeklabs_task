@@ -1,13 +1,58 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: #202020;
+}
+
+ul {
+  list-style: none;
+}
+
+.app {
+  width: calc(100% - 120px);
+  display: flex;
+}
+
+.filters {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+
+.alert {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+
+.gray-light {
+  color: #f2f2f2;
+}
+
+.gray-medium {
+  color: #cccccc;
+}
+
+.gray-dark {
+  color: #333333;
+}
+
+.accent-color {
+  color: #53acff;
+}
+
+.orange {
+  color: #d94111;
+}
+
+.green {
+  color: #118f4b;
 }

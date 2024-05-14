@@ -1,0 +1,199 @@
+nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 7px;
+  width: 76px;
+  height: 100%;
+  background-color: #0f0f0f;
+  z-index: 9;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-radius: 10px;
+  transition: all 0.7s ease-in-out;
+}
+
+button img {
+  width: 30px;
+}
+.notif {
+  display: none;
+}
+.nav-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ul img {
+  width: 25px;
+}
+nav a {
+  color: white;
+}
+
+nav a.soon {
+  color: #ffffff4d;
+}
+nav .logo {
+  text-align: center;
+  transition: all 0.3s ease-in;
+}
+nav .logo img {
+  width: 54px;
+  transition: all 0.3s ease-in;
+}
+
+nav ul {
+  padding: 0;
+  padding: 60px 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s ease-in;
+}
+.nav-li {
+  margin-left: 10px;
+  display: none;
+  transition: all 0.3s ease-in;
+}
+
+nav a {
+  display: block;
+  transition: all 0.3s ease-in;
+}
+
+nav .name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+nav .title {
+  color: #979797;
+  font-size: 13px;
+  font-weight: 600;
+}
+nav .avatar {
+  margin-top: -20px;
+}
+.profile-info {
+  display: none;
+}
+footer {
+  color: #424242;
+  font-size: 14px;
+  display: none;
+}
+
+/* mobile */
+@media (max-width: 1200px) {
+  nav {
+    width: 47px;
+    left: 0px;
+  }
+  ul img {
+    width: 20px;
+    transition: all 0.3s ease-in;
+  }
+
+  .avatar {
+    width: 30px;
+  }
+  .notif {
+    display: block;
+    width: 25px;
+    margin: auto;
+    margin-bottom: 35px;
+    transform: translateX(-2px);
+    background: transparent;
+    border: 0;
+  }
+  .notif span {
+    left: 21px;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    width: 180px;
+  }
+  25%,
+  75% {
+    width: 185px;
+  }
+  50% {
+    width: 180px;
+  }
+}
+nav:hover {
+  border-radius: 8px;
+  animation: bounce 1s ease-in-out;
+  animation-delay: 0.6s;
+  animation-duration: 0.6s;
+  width: 180px;
+}
+
+nav:hover .nav-li {
+  display: inline-block;
+  padding-block: 10px;
+  margin-block: -5px;
+  transition: all 0.3s ease-in;
+}
+nav:hover .logo img {
+  width: 124px;
+}
+
+nav:hover .profile-info {
+  display: flex;
+  flex-direction: column;
+}
+nav:hover footer {
+  display: block;
+}
+
+nav:hover ul li {
+  width: 135px;
+}
+
+nav ul li:hover a {
+  color: #53acff;
+  font-weight: 600;
+}
+
+nav ul li:hover svg path {
+  fill: #53acff;
+}
+
+.profile-card {
+  transform: translateY(10px);
+  transition: all 300ms ease;
+}
+nav:hover .profile-card {
+  transform: translateY(0);
+}
+
+.soon {
+  cursor: default;
+  transition: opacity 250ms ease;
+}
+.soon::after {
+  content: "Coming Soon";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 120px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0;
+}
+.soon:hover::after {
+  opacity: 1;
+}
+.soon:hover > * {
+  box-shadow: 5px 20px 20px 12px #53acff inset;
+  filter: blur(8px);
+}
